@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo Chettan 2"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="https://img.icons8.com/dusk/64/000000/buy.png" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <header class="Header fixed-menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <a class="navbar-brand" href="#"><h3>WATCHE<b>S</b>HOP</h3></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only"></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GALLERY</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                SHOP
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Cart</a>
+                <a class="dropdown-item" href="#">MY Account</a>
+                <a class="dropdown-item" href="#">Wishlist</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+          <div class="card">
+            <img
+              src="./images/Rolex SKY-DWELLER.jpg"
+              class="card-img-top"
+              alt="Rolex SKY-DWELLER"
+              width="435"
+              height="290"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Rolex SKY-DWELLER</h5>
+              <p class="card-text">
+                Rolex Sky-Dweller 326938 Yellow Gold Black Dial 2020 EU.
+              </p>
+              <br />
+              <p class="price_1">139999 TND</p>
+              <i class="fas fa-heart fa-2x i"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img
+              src="./images/Rolex SUBMARINER.jpg"
+              class="card-img-top"
+              alt="ROLEX SUBMARINER"
+              width="435"
+              height="290"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Rolex SUBMARINER</h5>
+              <p class="card-text">
+                Rolex Submariner Date Sultan Dial 18k Gold Steel E-Serial 1990
+                TOP.
+              </p>
+              <br />
+              <p class="price_1">31838 TND</p>
+              <i class="fas fa-heart fa-2x i"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img
+              src="./images/Fossil.jpeg"
+              class="card-img-top"
+              alt="FOSSIL WATCH"
+              width="435"
+              height="290"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fossil BQ2125 FLYNN</h5>
+              <p class="card-text">
+                Fossil BQ2125 FLYNN Analog Watch
+                <br />
+                - For Men.
+              </p>
+              <br />
+              <p class="price_1">22536 TND</p>
+              <i class="fas fa-heart fa-2x i"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <video
+              src="./images/b4gRIfQXREgHmTRb8U8__hd.mp4"
+              class="card-img-top"
+              width="435"
+              height="290"
+            ></video>
+            <div class="card-body">
+              <h5 class="card-title">MEGALITH WATCH</h5>
+              <p class="card-text">
+                MEGALITH Luxury Luminous Watches Men Waterproof Stainless Steel
+                Analogue Wrist .
+              </p>
+              <br />
+              <p class="price_1">58 TND</p>
+              <i class="fas fa-heart fa-2x i"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="fade show"
+        id="cart"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        style="display: block; padding-right: 17px"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 id="Label_carte">Cart</h5>
+            </div>
+            <div class="modal-body">
+              <table class="show-cart table">
+                <tr>
+                  <td class="header_cart">WATCH TYPE</td>
+                  <td class="header_cart">UNIT PRICE</td>
+                  <td class="header_cart">QUANTITY</td>
+                  <td class="header_cart">REMOVE</td>
+                </tr>
+                <tr id="item-1">
+                  <td class="watch_type">Rolex SKY-DWELLER</td>
+                  <td><span class="price">139999</span></td>
+                  <td>
+                    <div class="input-group">
+                      <button
+                        class="minus-item input-group-addon btn btn-primary"
+                      >
+                        -
+                      </button>
+                      <p class="qte">0</p>
+                      <button
+                        class="plus-item btn btn-primary input-group-addon"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="delete-item btn btn-danger">X</button>
+                  </td>
+                </tr>
+                <tr id="item-2">
+                  <td class="watch_type">Rolex SUBMARINER</td>
+                  <td><span class="price">31838</span></td>
+                  <td>
+                    <div class="input-group">
+                      <button
+                        class="minus-item input-group-addon btn btn-primary"
+                      >
+                        -
+                      </button>
+                      <p class="qte">0</p>
+                      <button
+                        class="plus-item btn btn-primary input-group-addon"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="delete-item btn btn-danger">X</button>
+                  </td>
+                </tr>
+                <tr id="item-3">
+                  <td class="watch_type">Fossil BQ2125 FLYNN</td>
+                  <td><span class="price">22536</span></td>
+                  <td>
+                    <div class="input-group">
+                      <button
+                        class="minus-item input-group-addon btn btn-primary"
+                      >
+                        -
+                      </button>
+                      <p class="qte">0</p>
+                      <button
+                        class="plus-item btn btn-primary input-group-addon"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="delete-item btn btn-danger">X</button>
+                  </td>
+                </tr>
+                <tr id="item-4">
+                  <td class="watch_type">MEGALITH WATCH</td>
+                  <td><span class="price">58</span></td>
+                  <td>
+                    <div class="input-group">
+                      <button
+                        class="minus-item input-group-addon btn btn-primary"
+                      >
+                        -
+                      </button>
+                      <p class="qte">0</p>
+                      <button
+                        class="plus-item btn btn-primary input-group-addon"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="delete-item btn btn-danger">X</button>
+                  </td>
+                </tr>
+              </table>
+              <p class="total_price">
+                Total price: <span id="total">0</span> TND
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>

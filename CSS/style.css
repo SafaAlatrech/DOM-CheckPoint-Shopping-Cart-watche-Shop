@@ -1,0 +1,192 @@
+/*	################################################################
+      1. General
+      ################################################################# */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+body a {
+  outline: none;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 22px;
+}
+h6 {
+  font-size: 22px;
+}
+p {
+  font-size: 18px;
+}
+div {
+  display: block;
+}
+.is_activate {
+font-size: 48px;
+  color: red;
+  transform-style: preserve-3d;
+  font-weight: bold;
+
+}
+/*	################################################################
+      2. Header
+      ################################################################# */
+.header.fixed-menu {
+  cursor: default;
+  line-height: 5em;
+  text-align: right;
+  width: 100%;
+}
+.bg-light {
+  background-image: url(/images/watch.header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80px;
+  padding-bottom: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+  font-style: italic !important;
+  margin-bottom: 10px;
+}
+#navbar a {
+  display: inline-block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+#navbar a:hover {
+  color: red;
+}
+#navbar a:active {
+  color: rgb(238, 255, 0);
+}
+.navbar-light .navbar-toggler {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: rgb(33, 37, 41);
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: rgb(209, 13, 13);
+}
+.navbar-light .navbar-toggler-icon {
+  background-color: white;
+}
+.navbar-brand b {
+  color: rgb(255, 14, 14);
+  font-family: "Pacifico", cursive;
+  font-size: 42px;
+}
+
+/*	################################################################
+      3.Main 
+      ################################################################# */
+.row {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.col {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.col h5 {
+  color: rgb(223, 146, 47);
+  font-weight: bold;
+}
+.price_1 {
+  color: rgb(245, 33, 13);
+  font-weight: 800;
+  background: #ecece8;
+  display: inline-block;
+  border-radius: 3px;
+}
+.add-to-cart {
+  display: block;
+  width: 105px;
+  margin-left: 450px;
+}
+.fa-heart {
+  position: absolute;
+  top: 420px;
+  left: 276px;
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: inline-block;
+  cursor: pointer;
+}
+.is-active {
+  animation-name: animate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  animation-fill-mode: forwards;
+}
+.qte{
+  font-weight: 600;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.price {
+  color: rgb(182, 182, 182);
+  font-weight: 700;
+}
+.watch_type{
+  color: black;
+font-size: 18px;
+font-weight: 600;
+}
+#Label_carte{
+  color: rgb(236, 29, 39);
+  font-size: 38px;
+  font-weight: 900;
+  font-family: "Pacifico", cursive;
+}
+.total_price{
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header_cart{
+  color: rgba(49, 51, 50, 0.986);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+}
